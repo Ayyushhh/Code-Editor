@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Editor</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb7cc2ebd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    
+    <h1>Code Editor</h1>
+    <div class="container">
+
+        <div class="left">
+            <h3>Write your Code here.</h3>
+
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            
+            <label><i class="fa-brands fa-square-js"></i>JS</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="right">
+            <h3>Your output will be shown here.</h3>
+            <label><i class="fa-solid fa-play"></i> Output</label>
+            <iframe id="output"></iframe>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
     
